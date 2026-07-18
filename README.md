@@ -21,7 +21,8 @@ This repository collects and organizes IoT ecosystem research artifacts for supp
 
 ```
 safeiot-supply-chain-pipeline/
-├── specifications/          # SBOM / CBOM / AI-BOM format specifications
+├── specifications/          # SBOM / CBOM / AI-BOM format specifications (CycloneDX, SPDX, ...)
+├── regulations/             # SBOM / CBOM / AI-BOM legal & policy mandates (NTIA, EO 14028, CRA, ...)
 ├── tools/                   # Supply-chain verification tools integrated into the pipeline
 │   └── jbomaudit/           #   JBomAudit (reserved; integration pending)
 └── docs/
