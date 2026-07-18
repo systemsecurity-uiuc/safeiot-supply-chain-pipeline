@@ -6,7 +6,7 @@ This directory hosts the supply-chain security and compliance verification tools
 
 | Tool | Description |
 |------|-------------|
-| [jbomaudit](jbomaudit/README.md) | Evaluates the completeness and accuracy of Java SBOMs against their JAR files _(integration pending)_ |
+| [jbomaudit](jbomaudit/README.md) | Evaluates the completeness and accuracy of Java SBOMs against their JAR files |
 
 ## Adding a New Tool
 

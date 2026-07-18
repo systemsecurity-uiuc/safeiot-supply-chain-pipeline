@@ -9,7 +9,7 @@ The SafeIoT pipeline is organized into two complementary tracks, each with its o
 | Track | Repository | Focus | Example Tool |
 |---|---|---|---|
 | 1 — IoT Vulnerability Detection | [safeiot-vuln-pipeline](https://github.com/systemsecurity-uiuc/safeiot-vuln-pipeline) | Vulnerabilities in IoT standards and their implementations, incl. commodity products such as Google Home, Apple Home, and SmartThings | [UMCCI Checker](https://github.com/systemsecurity-uiuc/safeiot-vuln-pipeline/tree/main/tools/umcci-checker) |
-| 2 — IoT SBOM, CBOM, and AI-BOM Verification | **safeiot-supply-chain-pipeline** (this repo) | Supply-chain security, privacy, and compliance issues in Software/Cryptographic/AI Bills of Materials for IoT systems | [JBomAudit](tools/jbomaudit/) _(integration pending)_ |
+| 2 — IoT SBOM, CBOM, and AI-BOM Verification | **safeiot-supply-chain-pipeline** (this repo) | Supply-chain security, privacy, and compliance issues in Software/Cryptographic/AI Bills of Materials for IoT systems | [JBomAudit](tools/jbomaudit/) |
 
 ---
 
@@ -24,7 +24,7 @@ safeiot-supply-chain-pipeline/
 ├── specifications/          # SBOM / CBOM / AI-BOM format specifications (CycloneDX, SPDX, ...)
 ├── regulations/             # SBOM / CBOM / AI-BOM legal & policy mandates (NTIA, EO 14028, CRA, ...)
 ├── tools/                   # Supply-chain verification tools integrated into the pipeline
-│   └── jbomaudit/           #   JBomAudit (reserved; integration pending)
+│   └── jbomaudit/           #   JBomAudit (example tool)
 └── docs/
     └── local-deployment.md  # End-to-end guide for deploying the pipeline locally
 ```
@@ -45,4 +45,4 @@ git clone https://github.com/systemsecurity-uiuc/safeiot-supply-chain-pipeline.g
 cd safeiot-supply-chain-pipeline
 ```
 
-<!-- Once JBomAudit is integrated: pip install -r requirements.txt -->
+Each tool under `tools/` manages its own dependencies — see [tools/jbomaudit/README.md](tools/jbomaudit/README.md) to run JBomAudit.

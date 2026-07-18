@@ -28,6 +28,4 @@ This directory tracks the legal and policy mandates that require producing, disc
 
 ### Update Instructions
 
-1. Add new entries under the relevant BOM-type section, newest first within each section isn't required — group by jurisdiction/topic instead if a section grows large.
-2. Note the regulation's actual title, official link, and one line on what it requires re: BOMs.
-3. Flag anything time-sensitive (like the AI-BOM note above) so it gets re-verified rather than trusted blindly.
+New entries go under the matching BOM-type section — real title, official link, one line on what it requires re: BOMs. This area moves fast (AI policy especially), so call out anything that's likely to be stale soon, the way the AI-BOM note above does.

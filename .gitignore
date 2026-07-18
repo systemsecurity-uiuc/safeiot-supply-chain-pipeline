@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+__pycache__/
+venv/
+.venv/
+
+# runtime output from tools/jbomaudit
+tools/jbomaudit/results/
+tools/jbomaudit/metaDB/
