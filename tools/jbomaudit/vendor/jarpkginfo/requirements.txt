@@ -1,4 +1,4 @@
-./vendor/jarpkginfo  # code-genome/jarpkginfo, vendored locally since the git+https URL 404s
+xmltodict
 beautifulsoup4==4.12.3
 certifi==2024.8.30
 charset-normalizer==3.3.2

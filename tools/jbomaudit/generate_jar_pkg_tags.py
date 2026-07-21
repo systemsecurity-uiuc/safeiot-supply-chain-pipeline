@@ -1,14 +1,9 @@
-import glob, os, json, shlex, sys
+import glob, os, json
 import collections
 from tqdm import tqdm
 import subprocess
 import concurrent.futures
 
-# `jarpkgtags` normally comes from installing git+https://github.com/code-genome/jarpkginfo.git
-# (see requirements.txt), which is currently unavailable. Until that's restored, fall back to
-# the bundled substitute in jarpkgtags_shim.py, which covers the same meta_info.json schema
-# minus reflection/dynamic-load detection.
-_JARPKGTAGS_SHIM = os.path.join(os.path.dirname(os.path.abspath(__file__)), "jarpkgtags_shim.py")
 
 
 def run_jar_pkg_tags(file):
@@ -24,7 +19,11 @@ def run_jar_pkg_tags(file):
     if "/metaDB/maven_asset_deps/" in file:
         parent_path=file.split(jar_name)[0].replace("/metaDB/maven_asset_deps/","/results/jarpkgtags/")
     else:
-        parent_path=file.split(jar_name)[0].replace("/samples/","/results/jarpkgtags/")
+        # file lives under <groupId>/<artifactId>/<version>/<jar_name> inside whatever
+        # sample directory was passed in (samples/ by default, or any --samples_dir) --
+        # mirror just those last three segments under results/jarpkgtags/.
+        gid, aid, ver = file.split("/")[-4:-1]
+        parent_path = f"./results/jarpkgtags/{gid}/{aid}/{ver}/"
 
     if not os.path.exists(parent_path):
         os.makedirs(parent_path)
@@ -34,7 +33,7 @@ def run_jar_pkg_tags(file):
     if os.path.exists(output_file):
         #print("existing!")
         return
-    command = f"{shlex.quote(sys.executable)} {shlex.quote(_JARPKGTAGS_SHIM)} {shlex.quote(file)}"
+    command = f"jarpkgtags {file}"
     # run the command
     process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
     output, error = process.communicate()
@@ -87,11 +86,11 @@ def batch_process(file_list):
         list(tqdm(executor.map(run_jar_pkg_tags, file_list), total=len(file_list)))
 
 
-def generate_pkgs_for_sbom():
+def generate_pkgs_for_sbom(directory='./samples/'):
     """
     Generates package tags for JAR files in the SBOM directory by finding and processing each file.
     """
-    file_list=get_shortest_jar(directory='./samples/')
+    file_list=get_shortest_jar(directory=directory)
     batch_process(file_list)
 
 
@@ -103,8 +102,8 @@ def generate_pkgs_for_sbom_deps():
     file_list=get_shortest_jar(directory='./metaDB/maven_asset_deps/')
     batch_process(file_list)
 
-def generate_jarpkgtags():
-    generate_pkgs_for_sbom()
+def generate_jarpkgtags(sbom_dir='./samples/'):
+    generate_pkgs_for_sbom(sbom_dir)
     generate_pkgs_for_sbom_deps()
 
 

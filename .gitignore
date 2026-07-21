@@ -7,3 +7,5 @@ venv/
 # runtime output from tools/jbomaudit
 tools/jbomaudit/results/
 tools/jbomaudit/metaDB/
+*.egg-info/
+build/

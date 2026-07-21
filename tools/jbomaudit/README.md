@@ -6,9 +6,7 @@ Vendored from [code-genome/jbomaudit](https://github.com/code-genome/jbomaudit) 
 
 ## A Note on `jarpkgtags`
 
-`requirements.txt` normally installs `jarpkgtags` from `git+https://github.com/code-genome/jarpkginfo.git`, a dependency the pipeline uses to extract each JAR's declared packages and their inter-package `uses` edges. That repo is currently unavailable, so the line is commented out in `requirements.txt` and `generate_jar_pkg_tags.py` instead calls the bundled [`jarpkgtags_shim.py`](jarpkgtags_shim.py), which reproduces the same `meta_info.json` schema using `zipfile` (declared packages) and `jdeps -verbose:package` (uses edges, ships with the JDK). It does not attempt reflection/dynamic-load detection the way the real tool reportedly does, so the `Undetermined` flag described below won't currently trigger from that path.
-
-Once `code-genome/jarpkginfo` is reachable again, uncomment it in `requirements.txt` and point `generate_jar_pkg_tags.py` back at the real `jarpkgtags` command.
+The pipeline depends on `jarpkgtags` (from IBM Research's [code-genome/jarpkginfo](https://github.com/code-genome/jarpkginfo)) to extract each JAR's declared packages, inter-package `uses` edges, and reflection/dynamic-load usage. `requirements.txt` normally installs this via `git+https://github.com/code-genome/jarpkginfo.git`, but that URL currently 404s, so it's vendored locally instead at [`vendor/jarpkginfo/`](vendor/jarpkginfo/) and installed from there.
 
 ## Quick Start
 
@@ -20,7 +18,6 @@ Once `code-genome/jarpkginfo` is reachable again, uncomment it in `requirements.
     source venv/bin/activate
     pip install -r requirements.txt
     ```
-    Also requires a JDK on `PATH` (for `jdeps`).
 
 2. **Prepare Target SBOM and JAR Files**
 
@@ -28,7 +25,23 @@ Once `code-genome/jarpkginfo` is reachable again, uncomment it in `requirements.
    ```
    /samples/<groupId>/<artifactId>/<version>/
    ```
-   A worked example is already in place at `samples/org.opendaylight.aaa/aaa-cli-jar/0.15.2/`.
+
+   Ten worked examples are already in place, five from the paper's own artifact-evaluation set and five added here for variety (two more real-world dependency mismatches plus a spread of clean baselines):
+
+   | Sample | Source | Result |
+   |---|---|---|
+   | `org.opendaylight.aaa/aaa-cli-jar/0.15.2` | paper's artifact-evaluation set | 12 missing direct deps |
+   | `com.hack23.sonar/sonar-cloudformation-plugin/3.0.11` | paper's artifact-evaluation set | 13 missing + 5 incorrect direct deps |
+   | `dev.iabudiab/dependency-track-maven-plugin/2.4.1` | paper's artifact-evaluation set | 3 incorrect direct deps |
+   | `gov.nist.secauto.oscal/liboscal-java/3.0.3` | paper's artifact-evaluation set | 1 incorrect direct dep |
+   | `org.apache.hbase/hbase-examples/2.5.3` | paper §VII case study (falsely-listed `zookeeper`) | 1 missing, 2 incorrect direct, 6 incorrect transitive, 21 incorrect transitive-relationship |
+   | `commons-io/commons-io/2.16.1` | added, clean baseline | clean |
+   | `org.apache.commons/commons-lang3/3.14.0` | added, clean baseline | clean |
+   | `org.apache.commons/commons-text/1.12.0` | added, clean baseline | clean |
+   | `commons-codec/commons-codec/1.17.1` | added, clean baseline | clean |
+   | `commons-validator/commons-validator/1.9.0` | added, clean baseline (has real transitive deps, still came back clean) | clean |
+
+   The paper's other §VII case study, `flight-sql-jdbc-driver` (missing `logback`), isn't included here — it's a 35MB shaded jar, too large to be worth vendoring into this repo for a demo sample.
 
 3. **Running the Analysis**
 
@@ -66,6 +79,18 @@ Once `code-genome/jarpkginfo` is reachable again, uncomment it in `requirements.
    ```
 
    If `-m` is not provided, **SearchMode.GLOBAL** is used by default.
+
+   #### **Batch Mode: Auditing Multiple Samples at Once**
+
+   To audit every sample under a folder in one run instead of one `--sbom_path`/`--jar_path` pair at a time, point `--samples_dir` at a folder of `<groupId>/<artifactId>/<version>/` subdirectories (each holding one jar and one `*-cyclonedx.json`):
+
+   ```bash
+   python3 main.py --samples_dir samples
+   ```
+
+   This isn't limited to `./samples/` — any folder with the same `<groupId>/<artifactId>/<version>/` layout works, e.g. `--samples_dir /path/to/other/sboms`. It runs the full pipeline for each sample found and finishes with a consolidated summary table of per-type finding counts. A failure on one sample (e.g. a dependency that's disappeared from Maven Central) is reported inline and doesn't abort the rest of the batch.
+
+   The first run against a new set of samples downloads every dependency referenced in their SBOMs from Maven Central, with a short pause between each new download — so runtime scales with how many *distinct* dependencies your samples reference. Downloads are cached under `metaDB/` and shared across samples in the same run, so overlapping dependencies (e.g. `commons-logging` showing up in several samples) are only fetched once.
 
 ## Results
 

@@ -1,0 +1,1390 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "serialNumber" : "urn:uuid:e77dd1e1-0694-4769-8838-2e18e4f04ef7",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2022-12-14T17:03:28Z",
+    "tools" : [
+      {
+        "vendor" : "OWASP Foundation",
+        "name" : "CycloneDX Maven plugin",
+        "version" : "2.7.3",
+        "hashes" : [
+          {
+            "alg" : "MD5",
+            "content" : "ab886f1cb1a79b4244ac54dde22a0989"
+          },
+          {
+            "alg" : "SHA-1",
+            "content" : "9ed658496dfeef87fe6072b95c62ec37165cc741"
+          },
+          {
+            "alg" : "SHA-256",
+            "content" : "df9b43417bef6aeac86a393abcc1ac2ed0518239ba544aaeb595b9619c603503"
+          },
+          {
+            "alg" : "SHA-512",
+            "content" : "223da34bb51c5339e0f7285757608c1a56b1ea887f7ad835af9299fabacc693053163da74af352af86b16e18e04db730bd44214eda04291410c42b6ae657d85c"
+          },
+          {
+            "alg" : "SHA-384",
+            "content" : "3aaf057329ed0f90ec3a49a45b3cf4ec5ce637fd75d6202e9483fa4274cec3e7b74308016e146b6ba087df5fce9397bb"
+          },
+          {
+            "alg" : "SHA3-384",
+            "content" : "0e2ce6d2a0e0ddea90f63d2e521e640e83aeac1230c201042e542186e9f32bceaf54ed9d26e6a9dec04c0f7895bbae19"
+          },
+          {
+            "alg" : "SHA3-256",
+            "content" : "dd3ba8325a1a759e5a8f159a3363213d4a34d51120c4e4c77097a6779964fb33"
+          },
+          {
+            "alg" : "SHA3-512",
+            "content" : "e5f87b2380e9785330fce113fedd5866a1498d5a9e365b7b00cb6fea50fd47166c471a6347d46d3edb7dd247a583874169624db5be2845c5c87dfdbcd58d9e89"
+          }
+        ]
+      }
+    ],
+    "component" : {
+      "group" : "com.hack23.sonar",
+      "name" : "sonar-cloudformation-plugin",
+      "version" : "3.0.11",
+      "description" : "Parent pom of SonarSource public projects",
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "GNU LGPL 3",
+            "url" : "http://www.gnu.org/licenses/lgpl.txt"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.hack23.sonar/sonar-cloudformation-plugin@3.0.11?type=sonar-plugin",
+      "externalReferences" : [
+        {
+          "type" : "build-system",
+          "url" : "https://www.hack23.com/jenkins/view/Tools/job/sonar-cloudformation-plugin/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/Hack23/sonar-cloudformation-plugin"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://community.sonarsource.com"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/Hack23/sonar-cloudformation-plugin"
+        }
+      ],
+      "type" : "application",
+      "bom-ref" : "pkg:maven/com.hack23.sonar/sonar-cloudformation-plugin@3.0.11?type=sonar-plugin"
+    }
+  },
+  "components" : [
+    {
+      "publisher" : "SonarSource",
+      "group" : "org.sonarsource.sonarqube",
+      "name" : "sonar-plugin-api",
+      "version" : "7.9",
+      "description" : "Open source platform for continuous inspection of code quality",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "e92626259801ba31dfbaa7a3724318dd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "d877218b743d6f626010f7fc8dd964dd56e8e890"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "589db4eb4201600466b86430fc6dbdf72d0fbf941056faeeaf1688a01e9223aa"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a7e111f0d29a98ceba5ca3ea5e9e9bc05547b28102c73c47c9c38b8f03472488187da4edf2bc55e06044a7dfb1f0a43ad52bbb29b85dd3f28d2df1d57b36f639"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "60dba2642b3f5b35a409529e5b35f72776d80c0d8221dfb45d059d9cd69ecc0c97a520142854f1ca0239cd61d4d2aef0"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "bff32fbcd99f498fdc8be1490d14a6d1b8cb0dbd769b99c8f50fa0140fb66f373cf6a5892786a664ba2b0fb0d8769184"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "dedb99bf8d846cdb26815fa0a4fe394b81310b42105f3daacd0aa24af46eec97"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "00a3724cca67c9b8a226296948285cdd4815a5ab52550366c09ee2e2c901a05e0f14e8cc43944845abeaadf42aa3e41b33418929f17c5c61bf4d19f1d7a5e615"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "GNU LGPL 3",
+            "url" : "http://www.gnu.org/licenses/lgpl.txt"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.sonarsource.sonarqube/sonar-plugin-api@7.9?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.sonarsource.com"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/SonarSource/sonarqube"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.sonarsource.sonarqube/sonar-plugin-api@7.9?type=jar"
+    },
+    {
+      "publisher" : "SonarSource",
+      "group" : "org.sonarsource.sonarqube",
+      "name" : "sonar-testing-harness",
+      "version" : "8.9.10.61524",
+      "description" : "Open source platform for continuous inspection of code quality",
+      "scope" : "optional",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "f4a7db18fcd403cdd64e345c78eba41c"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "17e998ff593f5b99292cd20df8aa2631a16f58e2"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "6758af3dde6e7c53aeebf2f811874ce810c23d93778e1f066bdf3f6ae584b8ad"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "49900d92bee1c9ca653917fe2a388e11188de4cafae4e157db6524cf19de6f9199f9b050b2d9528dcac1aa1241ae9912ee18809813b29e2ea09d99c30445baeb"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "3f0d2bef8df74bb941e4270635fa49b26e9bc5f8fe7e8469e058f785743a6b9bbedecc385066c622edc96de36abf88d0"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "17b89997976ce81dbae38db9db5fb96cc43d5146fba72ad5755526f22661c1ffcde8f39269a9bb0bafc08ffcf63bdf2a"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a034b599541c1f3bb5026ba4af775ecda6d8e14eb3308eb82307c0f73b5fc2ae"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "44fc1b47dce2f37306523728c54dc8a57891b47b003a26b197c45db29c9b89c26ca44cd22d9c129742e71161dd6ba70f1f4108ad2d460ab2584badc5a91525a9"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "GNU LGPL 3",
+            "url" : "http://www.gnu.org/licenses/lgpl.txt"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.sonarsource.sonarqube/sonar-testing-harness@8.9.10.61524?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.sonarsource.com"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/SonarSource/sonarqube"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.sonarsource.sonarqube/sonar-testing-harness@8.9.10.61524?type=jar"
+    },
+    {
+      "publisher" : "SonarSource",
+      "group" : "org.sonarsource.analyzer-commons",
+      "name" : "sonar-analyzer-commons",
+      "version" : "2.1.0.1111",
+      "description" : "Logic useful for a language plugin",
+      "scope" : "optional",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "ad9fa5eb6360369e55b60a29437aca4b"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "79c0938c7238fe27e4b580ddcb67c74351bbb99d"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "1cfe7f6c53359ac0d36236fca5b3c5704dc176bd83da3ffb33814c113d876cef"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3917ac8b6250086156b48dd745d211f15942d15a1a8c79e953d40dc14af6267605f3fa09205c979a4e4d9402c488bcf1a281311482cfe08ae062399a3e5d97d7"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "c245df21c6e83e11f52dbfa7bd272a227524f44a57dfe6f1f3174583903df6f466c03930bf0d879afd38576387342055"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0443e755842563fafd2605d9cba5c46c23031d1fd1e420d6e421f4c0c237b6985a5e95109c4dad37c478ea999d72ca8d"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "4ec19f3c190e18311a97f501fb4d0d47b7e30f8737d8d35e1de05571ad535a41"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2389a7ddf384e1ea1c05781b9c204521e6963569b36fb65561355fc69870e3d8a8ae274fd185c550545d3c2d4340c752a96ce74d04f3a299821a83ea80fc2a49"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "GNU LGPL 3",
+            "url" : "http://www.gnu.org/licenses/lgpl.txt"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.sonarsource.analyzer-commons/sonar-analyzer-commons@2.1.0.1111?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/SonarSource/sonar-analyzer-commons"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://cirrus-ci.com/github/SonarSource/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "http://jira.sonarsource.com"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://community.sonarsource.com"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.sonarsource.analyzer-commons/sonar-analyzer-commons@2.1.0.1111?type=jar"
+    },
+    {
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.commons",
+      "name" : "commons-lang3",
+      "version" : "3.12.0",
+      "description" : "Apache Commons Lang, a package of Java utility classes for the classes that are in java.lang's hierarchy, or are considered to be so standard as to justify existence in java.lang.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "19fe50567358922bdad277959ea69545"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d919d904486c037f8d193412da0c92e22a9fa24230b9d67a57855c5c31c7e94e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "fbdbc0943cb3498b0148e86a39b773f97c8e6013740f72dbc727faeabea402073e2cc8c4d68198e5fc6b08a13b7700236292e99d4785f2c9989f2e5fac11fd81"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "c34b8a0e0eba2168ad56fedeb7a1d710b6f1d3f1ce6aae99a4e0247bd120efbbadc8dcb2f731045b8a16e3efd30604dc"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8ad6ebe7754bf0caa8cda7e59c0e95360d76e06a7ad6aeec5637985519dbd1dd06e7eed04711039f36ec4c49de280def"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "18ef639b2aeeb5aedffb18dbf20c79f33e300d99fb31b131689639cc470e6e4c"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "fbea96114dcf4f31cfaaa99987be756ddda3a6c74f8c835461997df794d54b92da1f60fe5c3f1f2a43cb8c5f5db7f4048bef77c70993673c7a93f3660fffc8da"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/LANG"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf?p=commons-lang.git"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://builds.apache.org/"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "website",
+          "url" : "https://www.apache.org/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar"
+    },
+    {
+      "publisher" : "The Apache Software Foundation",
+      "group" : "commons-io",
+      "name" : "commons-io",
+      "version" : "2.11.0",
+      "description" : "The Apache Commons IO library contains utility classes, stream implementations, file filters, file comparators, endian transformation classes, and much more.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "3b4b7ccfaeceeac240b804839ee1a1ca"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a2503f302b11ebde7ebc3df41daebe0e4eea3689"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "961b2f6d87dbacc5d54abf45ab7a6e2495f89b75598962d8c723cea9bc210908"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "5bd78eed456ede30119319c5bed8e3e4c443b6fd7bdb3a7a5686647bd83094d0c3e2832a7575cfb60e4ef25f08106b93476939d3adcfecf5533cc030b3039e10"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "114f1e324d90ad887c177876d410f5787a8e8da6c48d4b2862d365802c0efded3a88cb24046976bf6276cadad3712f0f"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "80288c03ad4d80d69f91d056ffc5570d49a9c76bf54ad2dff0121ecde26a560df76d05156f281f5c6db2a38ff07a873d"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5adfb5ccaf5f21a549422f426118a9542673926fcd18c68390cf813e791dcf6c"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "7573f47f0babb53cefdc7c2309a0b982d800139064537b0797da442853d081010ad7c3c74a500598a0f800639a5d540eca21963ea652c68613907059bd4278c2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/commons-io/commons-io@2.11.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/IO"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf?p=commons-io.git"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://builds.apache.org/"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "website",
+          "url" : "https://www.apache.org/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/commons-io/commons-io@2.11.0?type=jar"
+    },
+    {
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.staxmate",
+      "name" : "staxmate",
+      "version" : "2.4.0",
+      "description" : "StaxMate is a light-weight framework that adds convenience to streaming XML-processing without significant additional overhead. It builds on top of a Stax (JSR-173) compliant XML processors such as Woodstox or Sjsxp (default Stax implementation of JDK 1.6) and offers two basic abstractions: Cursors, which build on XMLStreamReaders and Output objects, which build on XMLStreamWriters.",
+      "scope" : "optional",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6d61266d0c79ded3a438ce5d06dba05b"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "28ed7a766674e9cc3d909e45b1d3ca6e2f576b51"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "469243eb4fe15dba6de014d4804fd91861fb70a745b9bc89d0fa69559685d53b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "bbf47ee482dd8c503d651e01b907e47d8c3d9e0a4c265e6c40302f7e331641bb310b790c271f9fad1ba77c8d824498c837def96ee7b1ebbc9b842bbf42a6e0ff"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "278c08970080f214962b00411681b35c8dc3491e186b057d66db108c776925201cb3565720b737ae4434f93aaa0661dd"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "234d047a015fc3f066224c6908079528b1fbcf0f4645f1ca3bf10277d3e26b2ce866b00cde5c076fce116c8a24c8f45b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6610f7aa808b953a3ca870c22883defa22691017932a6056180a175760bd70af"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c225eab40504f221b9b796fb58e1efb3446c5eb499385ec996c93566a040859384c4394240908a91c3c282a26e55a39b95a84ac519c4992a736f5af7a387ae7a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.staxmate/staxmate@2.4.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/FasterXML"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/FasterXML/StaxMate/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/FasterXML/StaxMate"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.staxmate/staxmate@2.4.0?type=jar"
+    },
+    {
+      "publisher" : "fasterxml.com",
+      "group" : "org.codehaus.woodstox",
+      "name" : "stax2-api",
+      "version" : "4.2.1",
+      "description" : "tax2 API is an extension to basic Stax 1.0 API that adds significant new functionality, such as full-featured bi-direction validation interface and high-performance Typed Access API.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "af8377bc7882332e22456616a9f164f6"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a3f7325c52240418c2ba257b103c3c550e140c83"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "678567e48b51a42c65c699f266539ad3d676d4b1a5b0ad7d89ece8b9d5772579"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "00efc5d4d17540fb180c5b20d456630a8b3262dff46676689ae916ba16f0fbd9b1a71c7badfb254faad6597f94fed1edb96f77c15f40178eaf4d8cd35cea5e8d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "97a6a9f0cc666776e4a4f08729c303d2a602ce5c25ee633cd6c54c72f12d11e9d43634ca6ca4ef7da5973a52030384da"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "683a1f110ab84333e7517dabe175b91d7ea2fbead2f9d02acf798c588a7508bc67580642afa8d57441bc56ce610d5b0f"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5e8e54209fb6b580e928e703ef11645aff1a21dfd47cca2dc0e53d0befaef09c"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "d79338a481605c94e144c967cb7adbc6cfd06ee6a1182b5ebc8cd8ad3deedd707931e404aa197bc94d3b5a5d82a2e6dd6a2f6cc9dafc42ce3ad5061076b05199"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-4-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://fasterxml.com"
+        },
+        {
+          "type" : "vcs",
+          "url" : "http://github.com/FasterXML/stax2-api"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.1?type=jar"
+    },
+    {
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-databind",
+      "version" : "2.14.1",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "3e3e7aab8799ccc169b10f244e6fb5b4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "268524b9056cae1211b9f1f52560ef19347f4d17"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "423a0c806de4b3fa5eb4a28698305e3a3777c731e1bcfa1b2f3a3760c7b6e773"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "e23798189c4178603d6df8d27f5a0595f278d8df7584425fe225cf48a1e89d46e50ac0841a8c1f371a4ac4c45680ef207f2e496258f9d3ecf53d5734f6892f54"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "14ddb27647d784645b9d66a75cdad0e88256752994df50b366c35b70e38d32712abb74a7e58089cd7d5048dbcffd076a"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4349a433aa87807ef2af5f214dcb154e3bbd5a884c226d5cdefba54feaf2170aee7e169a2e381fa377a6a33f53c0f44c"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "3f32d8ce6fb9ef44408817f1416c8dd445d25e871a63cc4b598a7ddb2d3138ff"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c00ab62eebc416880851bd5276ef238b3afa8deb6ed0553fbfd6670a44071f362f794cba69c950f53e17a77dcc471a2a1519436910439e08a359e82e58054d43"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-databind"
+        },
+        {
+          "type" : "website",
+          "url" : "http://fasterxml.com/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.1?type=jar"
+    },
+    {
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-annotations",
+      "version" : "2.14.1",
+      "description" : "Core annotations used for value types, used by Jackson data binding package.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "da4742ba6aeb24bf1bd29382fd95647b"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "2a6ad504d591a7903ffdec76b5b7252819a2d162"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d255b4b863ff8ec714a8f96fa55c34621d43dbb82b82d3f57476496a4c09e1e7"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "80c98ab07cf49a2114882f955e5eefe9cef888a495b7db34f0a3c171525dff645f091fbc4dcea8d124ff85ae6eb530f481d25249420c9413772a712c78feb93d"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1a68c63fd1c9d5114e39aa07f36a688a4d5c2c07a66bbf2370ca67483f8569c8bd2ad446b36f24724bb73905e59eda53"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1f5eb50fb9c3681daf3103d041f2cc6dfa938d8038f1945871260fcb2a8e417c8366f346f916898a0099c36cdfb964d1"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "4f2842ab076e5107fad346f0a79c3f87a75f5667b400e7087c6fee7951a37cdb"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "60038ae7eeb69fca94e497dda74649e53e9b406d13fa03ef6833bff46f59605b53d17a4004c45b7edaf04ab329b08a6c70e50e177362eb147c2ad70f98b2eee2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-annotations"
+        },
+        {
+          "type" : "website",
+          "url" : "http://fasterxml.com/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.1?type=jar"
+    },
+    {
+      "publisher" : "FasterXML",
+      "group" : "com.fasterxml.jackson.core",
+      "name" : "jackson-core",
+      "version" : "2.14.1",
+      "description" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "f9604a5f31129cdb7db4bdec90111850"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "7a07bc535ccf0b7f6929c4d0f2ab9b294ef7c4a3"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "0114187e296b34c931c1bf9e5a84152b62bfab7d182f5623f3982dc2da35e526"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "7a3cd2e4af749e800151efbcf0a18c6429bf5f8abb2dc2bd4f71ffeaba365574a0adb2ae204b6aba1f3a19f6fe6985d4ddf1169747235e85c5bedcdad2f4d58c"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "fcd9164ae7dd26b1562f89e9ff741a9c34611b022db52e387e7a9bc3d8f084b3f5390e9516b049a8542ccb1f1630a665"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "761066454385f5892b0bf1fadfcebd9b8a13d61677df0294ca68dfa4317b3c61e21c429027c7ac6d8272ba80e12a166d"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "5302084471ac0959b67c640165eb595007371ebebd4646b81d9a76b26d9f6920"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0733c8d5b752ceabd35bd396470289d3773b804bdcd8b292c3a834394d810e095542a077edb5c7014bb70a8f9ebd7df18553df2cb7947436fbdad8ed7ede0851"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/FasterXML/jackson-core"
+        },
+        {
+          "type" : "website",
+          "url" : "http://fasterxml.com/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.1?type=jar"
+    },
+    {
+      "publisher" : "JUnit",
+      "group" : "junit",
+      "name" : "junit",
+      "version" : "4.13.2",
+      "description" : "JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d98a9a02a99a9acd22d7653cbcc1f31f"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a31b9950f929a7e5a600d89787ef40e42a8a8e2392e210d0c0f45b3572937670a18a524f1815508cd1152cd1eaa7275cb7430ba45c053be365c83c231bccd3f0"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "9f85c56a77c699eb87630b9e8224068a34c296bcd9aadb52248dd4665036f5bf1048fe75e5cb590b59e7855ca716acae"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "590cfd9396424583879ca8ad732870406bab18325ac72fb2bbe188b9611278d6341700badf7cfc32525b8ff42900c905"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a06b3fd2fd1d9f4306b58125484e3605a395afe5ffe2c801e43ae462f366a430"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "a6d25ce3c14f9065f06dfd0e68e1dad5c03bd5de0a302c44ca4733d2cb87ec1bc6f0abd36d65aeee8caf328b6881432c4b682fa4b4b1fa931c3c950de5129fb2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-1.0",
+            "url" : "http://www.eclipse.org/legal/epl-v10.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/junit/junit@4.13.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://www.junit.org"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/junit-team/junit4/actions"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://github.com/junit-team/junit4/wiki/Download-and-Install"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/junit-team/junit4/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit4"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/junit/junit@4.13.2?type=jar"
+    },
+    {
+      "group" : "org.hamcrest",
+      "name" : "hamcrest-core",
+      "version" : "1.3",
+      "description" : "This is the core API of hamcrest matcher framework to be used by third-party framework providers. This includes the a foundation set of matcher implementations for common operations.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6393363b47ddcbba82321110c3e07519"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "42a25dc3219429f0e5d060061f71acb49bf010a0"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "e237ae735aac4fa5a7253ec693191f42ef7ddce384c11d29fbf605981c0be077d086757409acad53cb5b9e53d86a07cc428d459ff0f5b00d32a8cbbca390be49"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "4b5297d2a12cc32b824153afc83f1ba9f1869ca288330f0a2f759659d09e4c420eb6ba4a1efbfa0657b625edd41293d5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "b14d34985c0a78cf0ba19b5a18bffd403e08adcb2afde228ddef6e16121c7046dbebf58c04d3419311c4496c48aa93be"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "f679af77deedf69b3c3066f7916583848c6fd32a950f9c0b0e2ef1da121717ba"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "bca821931e438a1977b7b4356b5f8cebf485634f82159d505c48267c34e6a0f4fde9c2917331365f66dc0e52e2ca3a2db5256863584110c27ecebefc28741f63"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-3-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/hamcrest/JavaHamcrest"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"
+    },
+    {
+      "group" : "com.openpojo",
+      "name" : "openpojo",
+      "version" : "0.9.1",
+      "description" : "This project was born out of a need to validate all POJOs (Plain Old Java Object) are behaving correctly. This project has two main aspects to it: * Make Testing as easy as possible. * Simplifying identity management (hashCode / equals) using annotation.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "97e9d54ac3d16bf1cf2736e2207a2160"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "99d7309fd6bb203d5b90d37c84adffcdec9192b5"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "042706a50124bb700610bef984b91bc67e362387d4e0299fb81b398fd91548aa"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "19bd503fbcad77d44b5e917e1e84b359bed54735248857ca6cd146fc5b7ed3258392d615cbfa52cef1bc4ef83ec21b4d6c4787d301c74a33a1d2b6b7fac4be68"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "184a218f3042490756e4f20b7bb96b2f57367ecb744f9e9ea0ef6ff74bc93aa7253db123f2e438d004771882f1629d48"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "a7ab5611d9fb15f5b00d301c47e6b16ef36f0c45efad98afb8b06d04ec39bca99b876e6097cadcd26268bd3f97729969"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "e37047882a9bd6c13ec8ec527a95b461c530a952d0802f7ae0ab24b93cad9214"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "d0402a3307ecc6c971c32fa8c5d2dcaff2d660f53470d063302e77c6f02e3a4bb1ed9523fa5cfe64905d766397d14e22833282f888573a3a9e2d5a5da504d6f8"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/com.openpojo/openpojo@0.9.1?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/OpenPojo/openpojo/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/OpenPojo/openpojo"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/com.openpojo/openpojo@0.9.1?type=jar"
+    },
+    {
+      "group" : "org.mockito",
+      "name" : "mockito-core",
+      "version" : "4.9.0",
+      "description" : "Mockito mock objects library core API and implementation",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "47391440e0bf8a429f6dd3c506a41a00"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "8caeed1bbe5f66a96ff9f8bd28f284709d802930"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "9b2a27ad7b0f32e14a600d78a6ceb57b5106c705cbba7b8064544cf6759e1330"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "4e9fc04ae82e22e9a31f6126a593ac771f0ef29b5e36ca2f7b4bcda000a00d11dcfc294ff1488bfb5bb4bdac0411e8d962cdd98437386ea0d28e3e939b1c0ffd"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "aa53ece091f762d67948710ae1aa488dde579cf9f293a0632115e96cef74f224171a244c1fd46545c7fc3816e49c8448"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3f9fbc741e9410afe8726b8259f5650a27e827364a4e0516d042e6224c5de6179beaafb83f5d378d31ed024d3bb6d10b"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "9007c3caa2b7e142e22cb285c66a4e176f831a2f34d94c70f566c527bb07b8df"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "5ffcada21606559ef2b4b63cef5b3af6bc2c91f5e06adda1a36cc76c2d30f7dd7c3115845c90dce752ecc038e6ba4a4be10a082c88c62895adb869b6f698ca65"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.mockito/mockito-core@4.9.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/mockito/mockito/actions"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/mockito/mockito/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/mockito/mockito.git"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.mockito/mockito-core@4.9.0?type=jar"
+    },
+    {
+      "group" : "net.bytebuddy",
+      "name" : "byte-buddy",
+      "version" : "1.12.16",
+      "description" : "Byte Buddy is a Java library for creating Java classes at run time. This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2327dfe368f76ae200fd353425f56ed0"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "7817a8128b38ff8cb8570c8f3c85c1a41002a09d"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e2a59ccffe107e83b355eb81dd8e9f3c82d0753c4b9a0e20bc64b0811d76795b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "68d2d93ce78c89369b68293a3836e0d3fdb271f300a28bed6db247dfa64295c0012ea955d80479a312560b75725ce1ca974b05bd07f6386ba6c17cf91fb6d659"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "531c320a588cfc92f52d07087786e0270ad9d6f3c8aeac4711235d103186f0e12b0ba1b61f495880c959d52feb8d7921"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "33c3de21410de17e7b6442459e11e2fb2eb5cebe338f19320b1f520ebd883fd52d50d0ebd5e294b271c89d8e07848eba"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "97ffeb74499690d7ca72ff5ddfb2aab35c95bdaf9592217846db07fe46697397"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "9e95100cb5f6599d5dfe13625907ff7b12da3ba938b9c832eeaceb034d563dd8f719b9fed86c5e5fe3903761faedd8f1f8ad779c20cd471083f4b96c1b2f564a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/net.bytebuddy/byte-buddy@1.12.16?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/raphw/byte-buddy/issues"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/net.bytebuddy/byte-buddy@1.12.16?type=jar"
+    },
+    {
+      "group" : "net.bytebuddy",
+      "name" : "byte-buddy-agent",
+      "version" : "1.12.16",
+      "description" : "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "9dd6d33539be0e5aa8a4004499eb33e3"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "c2d5dd150c17028c494e7f02a17f4a995dcb4e9f"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "38e258787665ac95e4f42ff1ca5b7550093762d289a61d436a26b6a25386358e"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "b3d2a46ef89559fafef06f9c85e3b2958423971d7059cbc2ead34eaa4118c6087a7198c6b6449d0c4b3f6fe872d79bdd670cee5993c48b5913f309c50708c204"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8feefcb0ce25845caa424f0b77b6570a7ad39464035e491b2f6cbb6d464232f592b532576c67e0c16575e61e99245df5"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "e9a36e319be753e0b468fd6ba253be4291b402c04301781b7a4cfc269e847c8042761525691a6a0e7cfa7431437e14a3"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6bb70a872a9f46b8f3f3fa8f39d4fb5e8b3b961e40c7a5274acd3e805bdc22ca"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "42d59d020dc68f35b7ab8c16a7461ee6279df478c6832bd042ce6a4dd2f24d3e0662f3a904a20ea50fbb0ac7da269c4a31bd45b552ca003237547489350d8d43"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.16?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/raphw/byte-buddy/issues"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.16?type=jar"
+    },
+    {
+      "publisher" : "Joe Walnes, Henri Tremblay, Leonardo Mesquita",
+      "group" : "org.objenesis",
+      "name" : "objenesis",
+      "version" : "3.3",
+      "description" : "A library for instantiating Java objects",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "ab0e0b2ab81affdd7f38bcc60fd85571"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1049c09f1de4331e8193e579448d0916d75b7631"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "02dfd0b0439a5591e35b708ed2f5474eb0948f53abf74637e959b8e4ef69bfeb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "1fa990d15bd179f07ffbc460d580a6fd0562e45dee8bd4a9405917536b78f45c0d6f644b67f85d781c758aa56eff90aef23eedcc9bd7f5ff887a67b716083e61"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2f6878f91a12db32c244afcee619d57c3ad6ff0297f4e41c2247e737c1ccc5fcc1ce03256b479b0f9b87900410bc4502"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "a3dd9f6908fe732900d50eb209988183ffcf511afb4e401ef95b75c51777709d2d10e1dc9ee386b7357c5c2cbcf8c00e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "fd2b66d174ed68cbfcda41d5cbd29db766c5676866d6b2324b446a87afab3a9f"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "ef509e8bcea73bc282287205ffc7625508080be44c16948137274f189459624891dcf109118c9feff109e1aa99becf176f8db837ac4fd586201510c3ae2ea30a"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.objenesis/objenesis@3.3?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/easymock/objenesis"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.objenesis/objenesis@3.3?type=jar"
+    },
+    {
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.commons",
+      "name" : "commons-csv",
+      "version" : "1.10.0",
+      "description" : "The Apache Commons CSV library provides a simple interface for reading and writing CSV files of various types.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "9840e4b446c874c3ad2a01e89f4d10d6"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "48531a67e022d1705bc8168c77af00bd5cc8e9d3"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b653c82117dfb6f83673f440f0fefcc6273f04f5c3949a10385489bf51de4c5d"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3374edd7297c25afadafb8496e9a9a1229699c4d604be1dc0e67c26b34c539ba8e0db3521f783131d98081fb218bf376c68c9efb4cad377787b698f1d172af7f"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "c9a8487b5b0c6a55ce321c75af2f109f498b02fbec85468890b1c12fec6e13ce1f38ecf65ec74b8e179b257528d46e26"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "a4885437fcb84b87e874eed63b0bce4bee41b374858926423d3cdcfe43f58f27901c3e1c50aa2c4a48176d881edc5dd2"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "79a6e94f7f306c92fcb313e4bb9f93d7dad686aa62c345ea9c69e1604b48a8cf"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "6ddee18a26d6ab6a34a9f47f643456d791c359c1d43a30561803c8ba6f01e208b77721c3f4a6d578162bb9f838338bd68a52683e55bbe0709ecb0a6acb105528"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.commons/commons-csv@1.10.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://issues.apache.org/jira/browse/CSV"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://gitbox.apache.org/repos/asf?p=commons-csv.git"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/apache/commons-parent/actions"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://mail-archives.apache.org/mod_mbox/commons-user/"
+        },
+        {
+          "type" : "website",
+          "url" : "https://www.apache.org/"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://repository.apache.org/service/local/staging/deploy/maven2"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.commons/commons-csv@1.10.0?type=jar"
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/com.hack23.sonar/sonar-cloudformation-plugin@3.0.11?type=sonar-plugin",
+      "dependsOn" : [
+        "pkg:maven/org.sonarsource.sonarqube/sonar-plugin-api@7.9?type=jar",
+        "pkg:maven/org.sonarsource.sonarqube/sonar-testing-harness@8.9.10.61524?type=jar",
+        "pkg:maven/org.sonarsource.analyzer-commons/sonar-analyzer-commons@2.1.0.1111?type=jar",
+        "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
+        "pkg:maven/commons-io/commons-io@2.11.0?type=jar",
+        "pkg:maven/com.fasterxml.staxmate/staxmate@2.4.0?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.1?type=jar",
+        "pkg:maven/junit/junit@4.13.2?type=jar",
+        "pkg:maven/com.openpojo/openpojo@0.9.1?type=jar",
+        "pkg:maven/org.mockito/mockito-core@4.9.0?type=jar",
+        "pkg:maven/org.apache.commons/commons-csv@1.10.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.sonarsource.sonarqube/sonar-plugin-api@7.9?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.sonarsource.sonarqube/sonar-testing-harness@8.9.10.61524?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.sonarsource.analyzer-commons/sonar-analyzer-commons@2.1.0.1111?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/commons-io/commons-io@2.11.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.staxmate/staxmate@2.4.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.1?type=jar",
+      "dependsOn" : [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.1?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.1?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/junit/junit@4.13.2?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.hamcrest/hamcrest-core@1.3?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/com.openpojo/openpojo@0.9.1?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.mockito/mockito-core@4.9.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/net.bytebuddy/byte-buddy@1.12.16?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.16?type=jar",
+        "pkg:maven/org.objenesis/objenesis@3.3?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/net.bytebuddy/byte-buddy@1.12.16?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.16?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.objenesis/objenesis@3.3?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.commons/commons-csv@1.10.0?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
