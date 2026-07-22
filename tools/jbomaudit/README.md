@@ -2,12 +2,6 @@
 
 **JBomAudit** is a tool to evaluate the completeness and accuracy of Java SBOMs (Software Bill of Materials). The tool analyzes SBOMs alongside their corresponding JAR files to detect discrepancies, categorized as either missing dependencies or incorrect dependencies.
 
-Vendored from [code-genome/jbomaudit](https://github.com/code-genome/jbomaudit) for the SafeIoT supply-chain pipeline. Source is otherwise unmodified except where noted below.
-
-## A Note on `jarpkgtags`
-
-The pipeline depends on `jarpkgtags` (from IBM Research's [code-genome/jarpkginfo](https://github.com/code-genome/jarpkginfo)) to extract each JAR's declared packages, inter-package `uses` edges, and reflection/dynamic-load usage. `requirements.txt` normally installs this via `git+https://github.com/code-genome/jarpkginfo.git`, but that URL currently 404s, so it's vendored locally instead at [`vendor/jarpkginfo/`](vendor/jarpkginfo/) and installed from there.
-
 ## Quick Start
 
 1. **Set up a virtual environment**

@@ -23,10 +23,8 @@ This repository collects and organizes IoT ecosystem research artifacts for supp
 safeiot-supply-chain-pipeline/
 ├── specifications/          # SBOM / CBOM / AI-BOM format specifications (CycloneDX, SPDX, ...)
 ├── regulations/             # SBOM / CBOM / AI-BOM legal & policy mandates (NTIA, EO 14028, CRA, ...)
-├── tools/                   # Supply-chain verification tools integrated into the pipeline
-│   └── jbomaudit/           #   JBomAudit (example tool)
-└── docs/
-    └── local-deployment.md  # End-to-end guide for deploying the pipeline locally
+└── tools/                   # Supply-chain verification tools integrated into the pipeline
+    └── jbomaudit/           #   JBomAudit (example tool; more tools coming)
 ```
 
 ---
@@ -45,4 +43,4 @@ git clone https://github.com/systemsecurity-uiuc/safeiot-supply-chain-pipeline.g
 cd safeiot-supply-chain-pipeline
 ```
 
-Each tool under `tools/` manages its own dependencies — see [tools/jbomaudit/README.md](tools/jbomaudit/README.md) to run JBomAudit.
+From here, head into [tools/](tools/) and follow the README for whichever tool you want to run — each one manages its own dependencies and setup. Currently that's just [JBomAudit](tools/jbomaudit/); more tools will land here over time.
