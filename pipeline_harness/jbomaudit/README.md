@@ -6,8 +6,8 @@ SBOM should have declared and did not, and dependencies it declared that are not
 there.
 
 Vendored from [`code-genome/jbomaudit`](https://github.com/code-genome/jbomaudit)
-(Apache-2.0), the artifact for the NDSS 2025 paper "JBomAudit: Assessing the Landscape,
-Compliance, and Security Implications of Java SBOMs."
+(Apache-2.0), the artifact for the NDSS 2025 paper [JBomAudit: Assessing the Landscape,
+Compliance, and Security Implications of Java SBOMs](https://www.ndss-symposium.org/ndss-paper/jbomaudit-assessing-the-landscape-compliance-and-security-implications-of-java-sboms/).
 
 ## Flow
 
@@ -60,12 +60,16 @@ cached in `metaDB/` and shared across samples, so later runs are much faster. A 
 that fails, typically because a dependency has disappeared from Maven Central, is
 reported inline without aborting the batch.
 
-## Citation
+## Paper
+
+Yue Xiao, Dhilung Kirat, Douglas Lee Schales, Jiyong Jang, Luyi Xing, Xiaojing Liao.
+[*JBomAudit: Assessing the Landscape, Compliance, and Security Implications of Java SBOMs*](https://www.ndss-symposium.org/ndss-paper/jbomaudit-assessing-the-landscape-compliance-and-security-implications-of-java-sboms/).
+Network and Distributed System Security Symposium (NDSS), 2025.
 
 ```bibtex
 @inproceedings{jbomaudit,
   title={JBomAudit: Assessing the Landscape, Compliance, and Security Implications of Java SBOMs},
-  author={Yue Xiao, Dhilung Kirat, Douglas Lee Schales, Jiyong Jang, Luyi Xing, Xiaojing Liao},
+  author={Yue Xiao and Dhilung Kirat and Douglas Lee Schales and Jiyong Jang and Luyi Xing and Xiaojing Liao},
   booktitle={Proceeding of the ISOC Network and Distributed System Security Symposium (NDSS)},
   year={2025}
 }
