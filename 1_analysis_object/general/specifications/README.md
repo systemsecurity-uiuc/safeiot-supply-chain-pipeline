@@ -8,7 +8,7 @@ This directory contains static specification documents and format references for
 
 ## SBOM (Software Bill of Materials)
 
-The primary focus of the supply-chain pipeline's current verification efforts, and what [JBomAudit](../tools/jbomaudit/) evaluates.
+The primary focus of the supply-chain pipeline's current verification efforts, and what [JBomAudit](../../../pipeline_harness/jbomaudit/) evaluates.
 
 ### Contents
 

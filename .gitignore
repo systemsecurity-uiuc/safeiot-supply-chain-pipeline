@@ -4,8 +4,8 @@ __pycache__/
 venv/
 .venv/
 
-# runtime output from tools/jbomaudit
-tools/jbomaudit/results/
-tools/jbomaudit/metaDB/
+# runtime output from jbomaudit
+3_security_analysis/jbomaudit/results/
+3_security_analysis/jbomaudit/metaDB/
 *.egg-info/
 build/
